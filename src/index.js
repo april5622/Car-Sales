@@ -5,10 +5,10 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import 'bulma/css/bulma.css';
 import './styles.scss';
-import { rootReducer } from './reducers';
+import { carsaleReducer } from './reducers/carsaleReducers';
 
 
-const store = createStore(rootReducer);
+const store = createStore(carsaleReducer);
 
 const rootElement = document.getElementById('root');
 ReactDOM.render(
